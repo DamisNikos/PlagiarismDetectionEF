@@ -9,14 +9,18 @@ namespace PlagiarismDetectionEF.Data.Classes
         public int StopNgramID { get; set; }
 
         [Required]
+        public string stopWordsInString { get; set; }
+        [NotMapped]
         public List<StopWord> stopWords { get; set; }
-
         [Required]
         public Boundary boundary { get; set; }
 
-        //public int profileStopWordID { get; set; }
-        //public ProfileStopWord profileStopWord { get; set; }
+        [ForeignKey("profileStopWord")]
+        public int profileStopWordID { get; set; }
+        public ProfileStopWord profileStopWord { get; set; }
 
 
+
+        
     }
 }

@@ -45,12 +45,13 @@ namespace PlagiarismDetectionEF.Core
             //iterate through each n-gram
             for (int i = 0; i < targetIndex; i++)
             {
-                StopNgram ngram = new StopNgram() {stopWords = new List<StopWord>() };
+                StopNgram ngram = new StopNgram() {stopWords = new List<StopWord>() , stopWordsInString=""};
                 
                 //add words to each n-gram
                 for (int j = 0; j < nGramSize; j++)
                 {
                     ngram.stopWords.Add(swPresentation[i + j]);
+                    ngram.stopWordsInString += swPresentation[i + j].word + ",";
                 }
                 //calculate the first and last index (in document's words) of the ngram
                 Boundary boundary = new Boundary()

@@ -10,14 +10,12 @@ namespace PlagiarismDetectionEF.Data.Classes
 {
     class ListOfWords
     {
-        public int listOfWordsID { get; set; }
+        [Required]
         public List<Word> listOfWords { get; set; }
 
-
-
-        //public Document document { get; set; }
-        //[ForeignKey("document")]
-        //public int documentID { get; set; }
+        [Key,ForeignKey("document")]
+        public int documentID { get; set; }
+        public Document document { get; set; }
 
         public ListOfWords() { listOfWords = new List<Word>(); }
     }

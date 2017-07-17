@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace PlagiarismDetectionEF.Data.Classes
 {
@@ -8,8 +9,9 @@ namespace PlagiarismDetectionEF.Data.Classes
         public int documentID { get; set; }
         public byte[] context { get; set; }
 
-
+        [Required]
         public ListOfWords words { get; set; }
+        [Required]
         public List<ProfileStopWord> profiles { get; set; }
 
         public Document()

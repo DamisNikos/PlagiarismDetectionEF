@@ -8,11 +8,12 @@ namespace PlagiarismDetectionEF.Data.Classes
         public int ProfileStopWordID { get; set; }
         public canditateOrboundary profileType { get; set; }
 
-        //[Required]
+        [Required]
         public List<StopNgram> ngrams { get; set; }
 
-        //public Document document { get; set; }
-        //public int documentID { get; set; }
+        public int documentID { get; set; }
+
+        public Document document { get; set; }
 
     }
 }

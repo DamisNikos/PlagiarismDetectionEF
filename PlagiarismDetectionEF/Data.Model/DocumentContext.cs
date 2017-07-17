@@ -5,13 +5,12 @@ namespace PlagiarismDetectionEF.Data.Model
 {
     class DocumentContext : DbContext
     {
-        //public DbSet<Document> Documents { get; set; }
-
-        //public DbSet<ProfileStopWord> Profiles { get; set; }
+        public DbSet<Document> Documents { get; set; }
+        public DbSet<ProfileStopWord> Profiles { get; set; }
         public DbSet<StopNgram> StopNGrams { get; set; }
         public DbSet<Word> Word { get; set; }
 
-        public DbSet<StopWord> StopWords { get; set; }
+        //public DbSet<StopWord> StopWords { get; set; }
         public DbSet<Boundary> Boundaries { get; set; }
         public DbSet<ListOfWords> ListOfWords { get; set; }
 
