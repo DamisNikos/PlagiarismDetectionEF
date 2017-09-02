@@ -45,9 +45,7 @@
     <Compile Include="Core\ConverterToByteArray.cs" />
     <Compile Include="Core\DocumentParser.cs" />
     <Compile Include="Core\ProfileStopWordBuilder.cs" />
-    <Compile Include="Data.Classes\Boundary.cs" />
     <Compile Include="Data.Classes\Document.cs" />
-    <Compile Include="Data.Classes\ListOfWords.cs" />
     <Compile Include="Data.Classes\ProfileStopWord.cs" />
     <Compile Include="Data.Classes\StopNgram.cs" />
     <Compile Include="Data.Classes\StopWord.cs" />
@@ -55,37 +53,9 @@
     <Compile Include="Data.Model\DocumentContext.cs" />
     <Compile Include="DatabaseTests\BoundaryWordsStopWords.cs" />
     <Compile Include="Enums\CanditateOrBoundary.cs" />
-    <Compile Include="Migrations\201707170858332_FromStep1.cs" />
-    <Compile Include="Migrations\201707170858332_FromStep1.Designer.cs">
-      <DependentUpon>201707170858332_FromStep1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201707170908335_NgramAdded.cs" />
-    <Compile Include="Migrations\201707170908335_NgramAdded.Designer.cs">
-      <DependentUpon>201707170908335_NgramAdded.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201707170916282_AddingProfiles.cs" />
-    <Compile Include="Migrations\201707170916282_AddingProfiles.Designer.cs">
-      <DependentUpon>201707170916282_AddingProfiles.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201707170934395_AddingProfiles1.cs" />
-    <Compile Include="Migrations\201707170934395_AddingProfiles1.Designer.cs">
-      <DependentUpon>201707170934395_AddingProfiles1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201707171023051_AddingProfiles2.cs" />
-    <Compile Include="Migrations\201707171023051_AddingProfiles2.Designer.cs">
-      <DependentUpon>201707171023051_AddingProfiles2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201707171146053_AddingDocument.cs" />
-    <Compile Include="Migrations\201707171146053_AddingDocument.Designer.cs">
-      <DependentUpon>201707171146053_AddingDocument.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201707171201576_AddingDocument1.cs" />
-    <Compile Include="Migrations\201707171201576_AddingDocument1.Designer.cs">
-      <DependentUpon>201707171201576_AddingDocument1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201707171208351_AddingDocument11.cs" />
-    <Compile Include="Migrations\201707171208351_AddingDocument11.Designer.cs">
-      <DependentUpon>201707171208351_AddingDocument11.cs</DependentUpon>
+    <Compile Include="Migrations\201709021707387_finalDb.cs" />
+    <Compile Include="Migrations\201709021707387_finalDb.Designer.cs">
+      <DependentUpon>201709021707387_finalDb.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
@@ -111,29 +81,8 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201707170858332_FromStep1.resx">
-      <DependentUpon>201707170858332_FromStep1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201707170908335_NgramAdded.resx">
-      <DependentUpon>201707170908335_NgramAdded.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201707170916282_AddingProfiles.resx">
-      <DependentUpon>201707170916282_AddingProfiles.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201707170934395_AddingProfiles1.resx">
-      <DependentUpon>201707170934395_AddingProfiles1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201707171023051_AddingProfiles2.resx">
-      <DependentUpon>201707171023051_AddingProfiles2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201707171146053_AddingDocument.resx">
-      <DependentUpon>201707171146053_AddingDocument.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201707171201576_AddingDocument1.resx">
-      <DependentUpon>201707171201576_AddingDocument1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201707171208351_AddingDocument11.resx">
-      <DependentUpon>201707171208351_AddingDocument11.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201709021707387_finalDb.resx">
+      <DependentUpon>201709021707387_finalDb.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

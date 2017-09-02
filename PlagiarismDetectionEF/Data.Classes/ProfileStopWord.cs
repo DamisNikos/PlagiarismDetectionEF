@@ -12,7 +12,6 @@ namespace PlagiarismDetectionEF.Data.Classes
         public List<StopNgram> ngrams { get; set; }
 
         public int documentID { get; set; }
-
         public Document document { get; set; }
 
     }

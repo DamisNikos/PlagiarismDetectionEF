@@ -54,12 +54,8 @@ namespace PlagiarismDetectionEF.Core
                     ngram.stopWordsInString += swPresentation[i + j].word + ",";
                 }
                 //calculate the first and last index (in document's words) of the ngram
-                Boundary boundary = new Boundary()
-                {
-                    lower = ngram.stopWords[0].index,
-                    upper = ngram.stopWords[nGramSize - 1].index
-                };
-                ngram.boundary = boundary;
+                ngram.lower = ngram.stopWords[0].index;
+                ngram.upper = ngram.stopWords[nGramSize - 1].index;
                 //add current n-gram to the profile
                 ngram.stopWords = ngram.stopWords.ToList(); 
                 docProfile.Add(ngram);

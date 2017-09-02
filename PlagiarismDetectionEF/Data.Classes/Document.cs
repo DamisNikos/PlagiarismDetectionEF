@@ -10,7 +10,7 @@ namespace PlagiarismDetectionEF.Data.Classes
         public byte[] context { get; set; }
 
         [Required]
-        public ListOfWords words { get; set; }
+        public List<Word> words { get; set; }
         [Required]
         public List<ProfileStopWord> profiles { get; set; }
 

@@ -13,7 +13,9 @@ namespace PlagiarismDetectionEF.Data.Classes
         [NotMapped]
         public List<StopWord> stopWords { get; set; }
         [Required]
-        public Boundary boundary { get; set; }
+        public int lower { get; set; }
+        [Required]
+        public int upper { get; set; }
 
         [ForeignKey("profileStopWord")]
         public int profileStopWordID { get; set; }
